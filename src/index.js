@@ -1,3 +1,4 @@
+import { addAbout } from "./about-page";
 import { addMain } from "./main-page";
 import { addMenu } from "./menu-page";
 import "./Style.css";
@@ -23,5 +24,10 @@ buttons.menu.addEventListener('click', ()=> {
     removeAllChilds(container);
     addMenu();
 })
+
+buttons.about.addEventListener('click', () => {
+    removeAllChilds(container);
+    addAbout();
+});
 
 addMain();
