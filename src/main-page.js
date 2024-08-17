@@ -1,11 +1,9 @@
 import {container} from "./index.js";
 
-export function swtichTab(){
-
+export function addMain(){
     for (let child of main){
         container.appendChild(child);
     }
-
 };
 
 const main = [

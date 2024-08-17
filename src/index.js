@@ -1,15 +1,27 @@
-import { swtichTab } from "./main-page";
+import { addMain } from "./main-page";
+import { addMenu } from "./menu-page";
 import "./Style.css";
-const container = document.querySelector("#content");
-export {container}
-swtichTab();
-const home = document.querySelector("#home");
-home.addEventListener('click', () => {
-    removeAllChilds(container);
-});
+export {container};
 
 function removeAllChilds(parent){
     while (parent.firstChild){
         parent.removeChild(container.lastChild);
     };
+}
+const container = document.querySelector("#content");
+const buttons = {
+    home: document.querySelector("#home"),
+    menu: document.querySelector("#menu"),
+    about: document. querySelector("#about")
 };
+buttons.home.addEventListener('click', () => {
+    removeAllChilds(container);
+    addMain();
+});
+
+buttons.menu.addEventListener('click', ()=> {
+    removeAllChilds(container);
+    addMenu();
+})
+
+addMain();
