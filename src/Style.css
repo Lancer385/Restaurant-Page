@@ -1,9 +1,16 @@
 body {
     margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("images/nicolas-hoizey-unsplash.jpg");
+    background-size: cover;
 }
 header {
     padding: 25px;
+    min-height: 50px;
     display: flex;
     height: 20%;
     justify-content: center;
@@ -12,8 +19,27 @@ nav {
     display: flex;
     gap: 50px;
 }
-#content {
-    height: 90vh;
-    background-color: blue;
-    color: red;
+footer {
+    min-height: 50px;
+    text-align: center;
+    color: white;
 }
+#content {
+    background-color: rgba(0, 0, 0, 0.422);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.mainImg {
+    width: 250px;
+    border: 5px solid rgb(118, 69, 10);
+    border-radius: 10px;
+}
+
+.dish {
+    width: 50px;
+}
+
