@@ -16,7 +16,7 @@ menu.dishes.classList = "menu";
 
 const imgSource = [img1, img2, img3]
 const dishImages = imgSource.map(src => createImage(src,"dish", ''));
-const textDesc = ["blah blah","bla","blah"];
+const textDesc = ["Chicken Caesar Wrap: Grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing wrapped in a soft tortilla, served with seasoned potato wedge","Beef-Stuffed Pepper: Bell peppers filled with ground beef, seasoned rice, and melted cheddar cheese, baked until tender and flavorful.","Cheese Fondue: A blend of cheddar and mozzarella cheeses, melted to creamy perfection, served with crusty bread, fresh veggies, and deli meats."];
 const dishDesc = textDesc.map(textContent => createText(textContent, "description"));
 for (let i = 0; i < dishImages.length; i++){
     menu.dishes.appendChild(dishImages[i])
